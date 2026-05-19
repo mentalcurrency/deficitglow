@@ -109,8 +109,8 @@ const seedState = {
     dailyCalorieTarget: 1600,
     goalEventName: "Greece vacation",
     goalEventDate: "2026-06-29",
-    goalImageUrl: "assets/deficit-glow-vision.png",
-    inspirationImageUrl: "assets/deficit-glow-vision.png",
+    goalImageUrl: "deficit-glow-vision.png",
+    inspirationImageUrl: "deficit-glow-vision.png",
     createdAt: new Date().toISOString()
   },
   foods: [...mockFoods],
@@ -339,7 +339,7 @@ function renderOnboarding() {
         <p class="muted">See exactly how food and movement shift your progress toward each 1 kg milestone.</p>
       </div>
       <div class="hero-media">
-        <img src="assets/deficit-glow-vision.png" alt="Soft wellness still life" />
+        <img src="deficit-glow-vision.png" alt="Soft wellness still life" />
         <div class="hero-badge">
           <strong>${money(Math.round(math.suggestedDailyDeficit))} kcal</strong>
           <span class="muted">suggested daily deficit for your event timeline</span>
@@ -703,8 +703,8 @@ function renderVision() {
     <section class="vision-grid">
       ${visionTile(state.user.goalImageUrl, "Future-self inspiration")}
       ${visionTile(state.user.inspirationImageUrl, "Celebrity or body inspiration")}
-      ${visionTile("assets/deficit-glow-vision.png", "Dress, bikini, or event")}
-      ${visionTile("assets/deficit-glow-vision.png", "Vacation or celebration")}
+      ${visionTile("deficit-glow-vision.png", "Dress, bikini, or event")}
+      ${visionTile("deficit-glow-vision.png", "Vacation or celebration")}
     </section>
     <section class="card glass form-grid">
       <label>Update future-self image<input id="visionGoalUpload" type="file" accept="image/*" /></label>

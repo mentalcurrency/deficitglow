@@ -5,8 +5,8 @@ const ASSETS = [
   "./styles.css",
   "./app.js",
   "./manifest.webmanifest",
-  "./assets/icon.svg",
-  "./assets/deficit-glow-vision.png"
+  "./icon.svg",
+  "./deficit-glow-vision.png"
 ];
 
 self.addEventListener("install", (event) => {

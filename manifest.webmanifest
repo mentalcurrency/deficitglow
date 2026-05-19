@@ -10,7 +10,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "assets/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
@@ -18,7 +18,7 @@
   ],
   "screenshots": [
     {
-      "src": "screenshots/home-dashboard.png",
+      "src": "home-dashboard.png",
       "sizes": "470x720",
       "type": "image/png",
       "form_factor": "narrow",
