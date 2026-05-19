@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4a9b8" />
+    <meta
+      name="description"
+      content="Deficit Glow is a mobile-first calorie deficit tracker with supportive craving mode, weekly progress, macros, and goal vision board."
+    />
+    <title>Deficit Glow</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <main id="app" class="screen" aria-live="polite"></main>
+      <nav class="bottom-nav" aria-label="Primary">
+        <button data-route="home" class="nav-item active">
+          <span class="nav-icon">H</span>
+          Home
+        </button>
+        <button data-route="food" class="nav-item">
+          <span class="nav-icon">+</span>
+          Log Food
+        </button>
+        <button data-route="craving" class="nav-item nav-craving">
+          <span class="nav-icon">10</span>
+          Craving
+        </button>
+        <button data-route="progress" class="nav-item">
+          <span class="nav-icon">%</span>
+          Progress
+        </button>
+        <button data-route="vision" class="nav-item">
+          <span class="nav-icon">V</span>
+          Vision
+        </button>
+      </nav>
+    </div>
+    <script src="app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./service-worker.js");
+        });
+      }
+    </script>
+  </body>
+</html>

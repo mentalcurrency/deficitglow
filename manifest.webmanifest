@@ -1,0 +1,28 @@
+{
+  "name": "Deficit Glow",
+  "short_name": "Glow",
+  "description": "A mobile-first calorie deficit tracker with supportive craving mode, weekly progress, macros, and goal vision board.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#f4a9b8",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/home-dashboard.png",
+      "sizes": "470x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home dashboard"
+    }
+  ]
+}
